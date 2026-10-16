@@ -1,0 +1,25 @@
+{
+  "name": "cham-soc-xe-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Backend website rửa xe & chăm sóc xe ô tô — dịch vụ, chi nhánh, đặt lịch, tin tức (MongoDB)",
+  "engines": {
+    "node": ">=18.11"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node scripts/khoi-tao-du-lieu.mjs",
+    "seed:lai": "node scripts/khoi-tao-du-lieu.mjs --xoa",
+    "test": "node scripts/test-api.mjs"
+  },
+  "dependencies": {
+    "cors": "2.8.6",
+    "dotenv": "16.6.1",
+    "express": "4.22.1",
+    "express-rate-limit": "7.5.1",
+    "jsonwebtoken": "9.0.3",
+    "mongodb": "6.21.0"
+  }
+}
